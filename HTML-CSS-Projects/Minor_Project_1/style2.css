@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Changa', sans-serif;
+}
+html,body{
+    width: 100vw;
+    height: 100%;
+    background-color: #dbdbdb;
+    overflow-x : hidden;
+    padding-top: 0.1px;
+}
+nav{
+    margin-top: 3vh;
+    /* background-color: red; */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+nav h1{
+    /* background-color: aqua; */
+    font-size: 2.3vw;
+    font-weight: 100;
+
+}
+nav h2{
+    font-size: 1.5vw;
+    font-weight:400;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-right: 2px solid black;
+}
+nav h2:nth-last-child(1)
+{
+    /* background-color: red; */
+    width: 10%;
+    border: none;
+}
+nav h2:nth-last-child(2)
+{
+    /* background-color: rgb(97, 17, 202); */
+    width: 30%;
+}
+nav h2:hover{
+    background-color: #bebdbda1;
+    border-radius: 8px;
+}
+#center{
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+    /* background-color: #d30909; */
+    padding: 1vw 3vw;
+     position: relative;
+}
+#content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+#overlay{
+    mix-blend-mode: exclusion;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+#upper{
+    height: 50%;
+    padding: 0.5vw 2vw;
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: cadetblue; */
+    border-bottom: 3px solid #ffff;
+}
+#upper p{
+font-family: 'Climate Crisis', sans-serif;
+font-size: 2.5vw;
+font-weight:100;
+letter-spacing:1px;
+word-spacing: 1px;
+color: white;
+}
+#dial{
+    border: 1px solid #ffff;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dial p{
+    font-family: 'Changa', sans-serif;
+    font-size: 2.5vw;
+}
+#bottom{
+    height: 50%;
+    padding: 0.5vw 2vw;
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bottom p{
+    font-family: 'Changa', sans-serif;
+    font-size: 2.5vw;
+    font-weight:100;
+    letter-spacing:1px;
+    word-spacing: 1px;
+    color: white;
+}
+#bottom i{
+    color: white;
+    font-size: 4.5vw;
+}
+#scroll{
+    /* background-color: aqua; */
+    margin-top: 2vw;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    gap:2vw;
+    animation-name: photoScroll;
+    animation-duration: 10s;
+}
+
+#scroll img{
+    
+    width: 13.5vw;
+    height: 15vw;
+    object-fit: cover;
+    object-position: top;
+    flex-shrink: 0;
+    border-radius: 50%;
+    transform: translateX();
+}
+@keyframes photoScroll 
+{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+}
